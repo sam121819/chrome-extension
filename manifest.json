@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Simple Phishing",
+    "description": "it's suggest us as per the database whether site is risky or safe",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "history"
+    ],
+    "background": {
+        "scripts": [
+            "data/sites.js",
+            "script.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": {
+            "128": "images/icon.png"
+        },
+        "default_title": "Simple Phishing",
+        "default_popup": "popup.html"
+    }
+}
